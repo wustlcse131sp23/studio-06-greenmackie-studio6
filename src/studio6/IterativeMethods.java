@@ -15,7 +15,13 @@ public class IterativeMethods {
 	public static double geometricSum(int n) {
 		double sum = 0.0;
 		for (int power = 1; power <= n; ++power) {
+			if (n == 1) {
+				return 0.5;
+			}
+			else {
 			sum = sum + Math.pow(0.5, power);
+			}
+			int i = n;
 		}
 		return sum;
 	}
